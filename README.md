@@ -14,6 +14,7 @@ El objetivo es ofrecer una base sólida para cualquier aplicación que requiera 
 - JWT Auth
 - Postman
 - XAMPP V3.3.0
+- Visual Code
 
 ## Instalación y Configuración
 Clona el repositorio
