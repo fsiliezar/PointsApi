@@ -74,7 +74,7 @@ class PointController extends Controller
         if (! $point) return response()->json(['message' => 'Point no encontrado'], 404);
         // Ownership check
         if ($point->user_id !== auth('api')->id()) {
-            return response()->json(['message' => 'Denegado: No eres el creador'], 403);
+            return response()->json(['message' => 'Denegado: No eres el creador del contenido'], 403);
         }
         $point->update($request->validated());
         return response()->json($point);
@@ -82,7 +82,7 @@ class PointController extends Controller
     public function destroy($id)
     {
         $point = Point::find($id);
-        if (! $point) return response()->json(['message' => 'Point no encontrado'], 404);
+        if (! $point) return response()->json(['message' => 'Point no encontrado del contenido'], 404);
         if ($point->user_id !== auth('api')->id()) {
             return response()->json(['message' => 'Denegado: tu no eres el creador'], 403);
         }
