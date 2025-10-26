@@ -35,34 +35,6 @@ class AuthController extends Controller
             'access_token' => $token,
             'token_type' => 'bearer',
             'expires_in' => JWTAuth::factory()->getTTL() * 60,
-            //'expires_in' => (int) JWTAuth::factory()->getTTL() * 60,
-            //'expires_in' => (int) config('jwt.ttl', 60) * 60,
-
-        ]);
+        ],200);
     }
-
-
-    /*public function login(LoginRequest $request): JsonResponse
-    {
-        try {
-            $credenciales = $request->only(['username', 'password']);
-
-            if (!$token = JWTAuth::attempt($credenciales)) {
-                return response()->json(['message' => 'Credenciales inválidas'], 401);
-            }
-
-            return response()->json([
-                'access_token' => $token,
-                'token_type' => 'bearer',
-                //'expires_in' => (int) JWTAuth::factory()->getTTL() * 60,
-                'expires_in' => (int) config('jwt.ttl', 60) * 60,
-
-            ]);
-        } catch (\Exception $e) {
-            return response()->json([
-                'error' => $e->getMessage(),
-                'trace' => $e->getTraceAsString(),
-            ], 500);
-        }
-    }*/
 }
