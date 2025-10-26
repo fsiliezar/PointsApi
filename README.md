@@ -1,12 +1,12 @@
 # Proyecto Backend - API REST Laravel
-###Descripción General
+## Descripción General
 
 Este proyecto es una API RESTful desarrollada en Laravel, diseñada para gestionar datos mediante endpoints seguros con autenticación JWT (JSON Web Token).
 Incluye validaciones, control de acceso mediante middleware, manejo de errores personalizados y respuestas estandarizadas en formato JSON.
 
 El objetivo es ofrecer una base sólida para cualquier aplicación que requiera autenticación, control de usuarios y administración de recursos desde un backend moderno.
 
-###Tecnologias Utilizadas
+## Tecnologias Utilizadas
 - Laravel  12.35.1
 - PHP 8.2.12
 - MySQL
@@ -15,7 +15,7 @@ El objetivo es ofrecer una base sólida para cualquier aplicación que requiera 
 - Postman
 - XAMPP V3.3.0
 
-###Instalación y Configuración
+## Instalación y Configuración
 Clona el repositorio
 `https://github.com/fsiliezar/PointsApi.git`
 
@@ -36,7 +36,7 @@ Enlace al iniciar el servidor
 `http://localhost:8000`
 
 ---
-###Endpoints Principales
+## Endpoints Principales
 
 | Método | Endpoint| Descripción|Protección|
 | :------------ |:---------------:| -----:|-----:|
@@ -48,7 +48,7 @@ Enlace al iniciar el servidor
 | PUT |/api/points/{id} | Actualiza un punto georeferencia existente |JWT
 | DELETE |/api/points/{id} | Elimina un punto georeferencia |JWT
 ---
-### Ejemplo de Flujo de Autenticación
+## Ejemplo de Flujo de Autenticación
 
 Registro de usuario: POST /api/registro
 
@@ -106,6 +106,6 @@ Eliminar de points: DELETE /api/points/{id}
 	       "message": "Point eliminado"
 	}
 ---
-####Autor
+## Autor
 Francisco Siliezar
 Desarrollador Backend
